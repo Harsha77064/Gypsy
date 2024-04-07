@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: #dac0a7;
+  max-height: 50vh;
+}
+
+section {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+section:before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100px;
+  background: linear-gradient(to top, #dac0a7, transparent);
+  z-index: 10000;
+}
+
+section:after {
+  content: '';
+  position:absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background:transparent;
+  z-index: 10000;
+  
+  
+}
+
+section img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+ 
+}
+
+#text {
+  position: relative;
+  color: #ffff;
+  font-size: 7em;
+  padding-bottom:400px;
+  z-index: 0;
+  text-shadow: 2px 2px 4px #000000;
+}
+#desert{
+ z-inxes:-1;
+}
+#camels
+{
+padding-left: 50px;
+padding-top:-2900px;
+z-index:0;
+}
+
+#dune
+{
+z-index:3;
+}
+#dune,#desert,#camels
+{
+mix-blend-mode: normal;
+}
+
+.sec 
+{
+display:block;
+
+}
+
+.sec p
+{
+  margin-left:7%;
+  font-size:20px; 
+  width:90%;
+}
+
+.sec h2 
+{
+  margin-left:7%;
+  font-size:40px; 
+  width:90%;
+}
+
+#d1{
+ margin-left:85%;
+
+}
+
+
+
+
+div {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+a {
+  display: inline-block;
+  border-radius: 50%;
+}
+
+a:hover .left, a:hover .top, a:hover .bottom, a:hover .right{
+  border: 0.5em solid #e74c3c;
+}
+
+a:hover .left:after, a:hover .top:after, a:hover .bottom:after, a:hover .right:after {
+  border-top: 0.5em solid #e74c3c;
+  border-right: 0.5em solid #e74c3c;
+}
+
+.left {
+  display: inline-block;
+  width: 4em;
+  height: 4em;
+  border: 0.5em solid #333;
+  border-radius: 50%;
+  margin-right: 1.5em;
+}
+
+.left:after {
+  content: '';
+	display: inline-block;
+  margin-top: 1.05em;
+  margin-left: 0.6em;
+  width: 1.4em;
+  height: 1.4em;
+  border-top: 0.5em solid #333;
+  border-right: 0.5em solid #333;
+  -moz-transform: rotate(-135deg);
+  -webkit-transform: rotate(-135deg);
+  transform: rotate(-135deg);
+}
+
+.top {
+  display: inline-block;
+  width: 4em;
+  height: 4em;
+  border: 0.5em solid #333;
+  border-radius: 50%;
+  margin-right: 0.75em;
+}
+
+.top:after {
+  content: '';
+	display: inline-block;
+  margin-top: 1.4em;
+  width: 1.4em;
+  height: 1.4em;
+  border-top: 0.5em solid #333;
+  border-right: 0.5em solid #333;
+  -moz-transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+.bottom {
+  display: inline-block;
+  width: 4em;
+  height: 4em;
+  border: 0.5em solid #333;
+  border-radius: 50%;
+  margin-left: 0.75em;
+}
+
+.bottom:after {
+  content: '';
+	display: inline-block;
+  margin-top: 0.6em;
+  width: 1.4em;
+  height: 1.4em;
+  border-top: 0.5em solid #333;
+  border-right: 0.5em solid #333;
+  -moz-transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+  transform: rotate(135deg);
+}
+
+.right {
+  display: inline-block;
+  width: 4em;
+  height: 4em;
+  border: 0.5em solid #333;
+  border-radius: 50%;
+  margin-left: 1.5em;
+}
+
+.right:after {
+  content: '';
+	display: inline-block;
+  margin-top: 1.05em;
+  margin-left: -0.6em;
+  width: 1.4em;
+  height: 1.4em;
+  border-top: 0.5em solid #333;
+  border-right: 0.5em solid #333;
+  -moz-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF -8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>| Kerala |</title>
+    <link rel="stylesheet" type="text/css" href="tricss.css" >
+  </head>
+  <body>
+    <section>
+      <img src="beaut.png" id="bg">
+      <img src="bana.png" id="bana">
+      <h2 id="text">KERALA</h2>
+      </section>
+      
+      <section class="sec">
+      <h2>A Mosaic of Traditions</h2><br><br>
+      <p >Kerala is a captivating destination nestled on the southwestern coast of India. Renowned for its rich cultural heritage,<br> lush green landscapes, and beautiful beaches, it offers a unique blend of tradition and modernity.<br> It is adorned with magnificent palaces, vibrant temples, and colonial-era buildings that showcase its historical<br> significance.The iconic Sree Padmanabhaswamy Temple, with its intricate architecture and religious fervor, stands <br>as a symbol of the city's deep-rooted spirituality. Kerala is also home to several museums, including the Napier Museum<br> and the Kerala Science and Technology Museum, where visitors can delve into the region's artistic and scientific<br> accomplishments. The state's coastline boasts picturesque beaches like Kovalam and Varkala, where one can relax<br> on golden sands and witness breathtaking sunsets.</p><br><br>
+
+ <p id="d1"><b>pick a package</b><a href="kercards.html"><span class="arrow right"></span></a></p>
+     </section> 
+       
+    <script type="text/javascript">
+    let bana=document.getElementById("bana");
+    let bg=document.getElementById("bg");
+    let text = document.getElementById("text");
+
+    window.addEventListener('scroll', function(){
+    var value= window.scrollY;
+    bana.style.top=value * 0.5 + 'px';
+    
+    text.style.top= -value * 1 + 'px';
+    })
+    </script>
+
+  </body>
+</html>

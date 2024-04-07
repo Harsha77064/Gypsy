@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF -8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>| Jaipur |</title>
+    <link rel="stylesheet" type="text/css" href="jaipurcss.css" >
+  </head>
+  <body>
+    <section style="height: 100vh;">
+      <img src="bg.png" id="bg">
+       <img src="desert.png" id="desert">
+      <img src="camels.png" id="camels">
+      <img src="dune.png" id="dune">
+      <h2 id="text">RAJASTHAN</h2>
+    </section>
+ <section class="sec"><br><br>
+      <h2>Land of the Kings</h2><br>
+      <p style="color:black;"><br>Rajasthan is a mesmerizing state in India that beckons travelers with its regal charm and rich history. Steeped in grandeur, this enchanting destination boasts majestic forts, opulent palaces, and intricate temples that narrate tales of a glorious past. From the golden sands of the Thar Desert to the lush Aravalli hills, Rajasthan's diverse landscapes offer a captivating blend of colors and cultures. Embrace the warmth of Rajasthani hospitality, savor traditional cuisine, and witness vibrant festivities that make this desert jewel an unforgettable experience for every wanderer.<br> <br>Embark on thrilling camel safaris, traversing the sand dunes of Jaisalmer, and witness the magical sunset that paints the desert sky in hues of orange and gold.Uncover the secrets of ancient cities like Jaipur, Udaipur, and Jodhpur, each adorned with architectural marvels and timeless monuments. Indulge in rejuvenating Ayurvedic treatments and spa therapies to experience ultimate relaxation amidst the royal ambiance of Rajasthan.</p>
+<br><br>
+
+<p id="d1"><b>pick a package</b></p><div>
+    <a href="https://buildspace.so/">
+      <span class="right" ></span>
+    </a>
+  </div>
+
+</section>
+
+
+    <script type="text/javascript">
+    let bg=document.getElementById("bg");
+    let desert=document.getElementById("desert");
+    let camels=document.getElementById("camels");
+    let dune=document.getElementById("dune");
+    let text = document.getElementById("text");
+
+    window.addEventListener('scroll', function(){
+    var value= window.scrollY;
+    
+    camels.style.right= value * 0.5 + 'px';
+    camels.style.top= value * 0.2 + 'px';
+    dune.style.bottom = value *1 + 'px';
+    text.style.top= value * 1 + 'px';
+    });
+     
+
+    </script>
+
+  </body>
+</html>

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Billdesk</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #b5838d;
+      color: #fff;
+      padding: 10px;
+      text-align: center;
+    }
+
+    main {
+      padding: 20px;
+    }
+
+    form {
+      max-width: 500px;
+      margin-left: 500px;
+      margin-top: 100px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 5px;
+    }
+
+    input[type="text"], input[type="email"], input[type="number"], input[type="submit"] {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+    }
+
+    input[type="submit"] {
+      background-color: #e29381;
+      color: black;
+      font-size:17px;
+      font-weight:500;
+      cursor: pointer;
+      
+    }
+   
+    .b{
+      display: flex;
+      flex-direction: row;
+    }
+    .one{
+      display: inline-block;
+      width: fit-content;
+    }
+    .two{
+      display: inline-block;
+      margin-left:100px;
+      margin-top:5px;      
+    }
+    #text1{
+      width:95%;
+    }
+
+  </style>
+</head>
+<body>
+  <header>
+    <h1>B i l l D e s k</h1>
+  </header>
+  <main>
+    <form id="paymentForm">
+      <div class="b">
+      <div class="one">
+      <label for="numberOfMembers">Number of Members:</label>
+      <input type="number" id="numberOfMembers" name="numberOfMembers" min="1" required>
+      <br>
+
+      <label for="cardHolderName">Cardholder Name:</label>
+      <input type="text" id="cardHolderName" name="cardHolderName" required>
+
+      <label for="expiryDate">Expiry Date:</label>
+      <input type="text" id="expiryDate" name="expiryDate" placeholder="MM/YY" required>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+      </div>
+
+      <div class="one">
+        <div class="two">
+          
+        <label for="t">
+          <input type="radio"  name="t" value="faculty" checked> Faculty
+          </label>
+          <label for="t">
+          <input type="radio" name="t" value="student"> Student
+          </label><br>
+      <label for="cardNumber">Card Number:</label>
+      <input type="text" id="cardNumber" name="cardNumber" required>
+<br>
+      <label for="cvv">CVV:</label>
+      <input type="text" id="cvv" name="cvv" required>
+      <br>
+      <label for="text">Coupon:</label>
+      <input type="text" id="text" name="coupon">
+
+      </div> 
+      </div>
+      </div>  
+       <label for="text1">Total Amount:</label>
+      <input type="text" id="text1" name="coupon" > 
+
+      <input type="submit" value="Make Payment">
+    </form>
+  </main>
+  <script>
+    document.getElementById("paymentForm").addEventListener("submit", function(event) {
+      event.preventDefault();
+      const numberOfMembers = document.getElementById("numberOfMembers").value;
+      const cardHolderName = document.getElementById("cardHolderName").value;
+      const cardNumber = document.getElementById("cardNumber").value;
+      const expiryDate = document.getElementById("expiryDate").value;
+      const cvv = document.getElementById("cvv").value;
+      const email = document.getElementById("email").value;
+
+  
+
+      alert("Payment Successful!\n\nReceipt will be sent to your email.");
+    });
+  </script>
+</body>
+</html>

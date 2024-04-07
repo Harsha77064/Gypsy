@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: #dac0a7;
+  max-height: 50vh;
+}
+
+section {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+section:before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100px;
+  background: linear-gradient(to top, #dac0a7, transparent);
+  z-index: 10000;
+}
+
+section:after {
+  content: '';
+  position:absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background:transparent;
+  z-index: 10000;
+  
+  
+}
+
+section img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+ 
+}
+
+#text {
+  position: relative;
+  color: #ffff;
+  font-size: 7em;
+  padding-bottom:400px;
+  z-index: 0;
+  text-shadow: 2px 2px 4px #000000;
+}
+#desert{
+ z-inxes:-1;
+}
+#camels
+{
+padding-left: 50px;
+padding-top:-2900px;
+z-index:0;
+}
+
+#dune
+{
+z-index:3;
+}
+#dune,#desert,#camels
+{
+mix-blend-mode: normal;
+}
+
+.sec 
+{
+display:block;
+
+}
+
+.sec p
+{
+  margin-left:7%;
+  font-size:20px; 
+  width:90%;
+}
+
+.sec h2 
+{
+  margin-left:7%;
+  font-size:40px; 
+  width:90%;
+}
+
+#d1{
+ margin-left:85%;
+
+}
+
+
+.arrow {
+	--arrow-size: 1em;
+	--arrow-color: rgb(255,255,255);
+	--arrow-color-hover: rgba(255,255,255,0.5);
+	position: relative;
+	display: inline-flex;
+	vertical-align: middle;
+	width: var(--arrow-size);
+	height: var(--arrow-size);
+	overflow: hidden;
+	
+	&::after {
+		content: '';
+		position: absolute;
+		top: 50%;
+		box-sizing: border-box;
+		display: inline-block;
+		width: calc( var(--arrow-size) * .7071);
+		height: calc( var(--arrow-size) * .7071);
+		border-top: calc( var(--arrow-size) / 5 ) solid var(--arrow-color);
+		transition: all 150ms ease-in-out;
+	}
+	
+	&.left {
+		&::after {
+			left: calc( var(--arrow-size) / 5 );
+			border-left: calc( var(--arrow-size) / 5 ) solid var(--arrow-color);
+			transform-origin: top left;
+			rotate: -45deg;
+		}
+
+		&:hover::after {
+			box-shadow: calc( var(--arrow-size) / -8 ) calc( var(--arrow-size) / -8 ) 0 var(--arrow-color);
+		}
+	}
+
+	&.right {
+		&::after {
+			right: calc( var(--arrow-size) / 5 );
+			border-right: calc( var(--arrow-size) / 5 ) solid var(--arrow-color);
+			transform-origin: top right;
+			rotate: 45deg;
+		}
+
+		&:hover::after {
+			box-shadow: calc( var(--arrow-size) / 8 ) calc( var(--arrow-size) / -8 ) 0 var(--arrow-color);
+		}
+	}
+}
+
+a {
+	&:hover .arrow {
+		&.left,
+		&.right {
+			&::after {
+				border-color: var(--arrow-color-hover);
+			}
+		}
+
+		&.left {
+			&::after {
+				box-shadow: calc( var(--arrow-size) / -8 ) calc( var(--arrow-size) / -8 ) 0 var(--arrow-color);
+			}
+		}
+
+		&.right {
+			&::after {
+				box-shadow: calc( var(--arrow-size) / 8 ) calc( var(--arrow-size) / -8 ) 0 var(--arrow-color);
+			}
+		}
+	}
+}
+
+
+
+html,
+body {
+	height: 100%;
+}
+
+
+
+
+
+
+
+
+
+

@@ -1,4 +1,4 @@
-
+// @ts-ignore
 let text = document.getElementById('text');
 let first = document.getElementById('first');
 let one = document.getElementById('01');

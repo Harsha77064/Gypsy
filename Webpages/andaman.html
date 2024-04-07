@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF -8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>| Andaman |</title>
+    <link rel="stylesheet" type="text/css" href="andaman.css" >
+  </head>
+  <body>
+    <section>
+      <img src="island.png" id="island">
+      <img src="moon.png" id="moon">
+      <img src="shrubs.png" id="shrubs">
+      <h2 id="text">ANDAMAN</h2>
+    </section>
+
+    <section class="sec"><br>
+       <h2>Island Bliss</h2><br><br>
+      <p style="color:white;">The Andaman Islands, nestled in the azure waters of the Bay of Bengal, present an enchanting escape into a world of breathtaking beauty. With its pristine white-sand beaches, crystal-clear waters teeming with vibrant marine life, and lush tropical forests, Andaman offers a perfect retreat for nature lovers and adventure seekers alike. The archipelago also boasts a rich history, with remnants of its colonial past and indigenous tribes adding to its allure. Embark on an unforgettable journey to this tropical paradise, where every moment is filled with awe and wonder.</p><br>
+
+        <p id="d1"><br><br><b>pick a package</b><a href="andacards.html"><span class="arrow right"></span></a></p>
+      </section>
+
+    <script type="text/javascript">
+    let bg=document.getElementById("island");
+    let moon=document.getElementById("moon");
+    let shrubs=document.getElementById("shrubs");
+    let text = document.getElementById("text");
+
+    window.addEventListener('scroll', function(){
+    var value= window.scrollY;
+    island.style.top=value * 0.5 + 'px';
+    moon.style.left= -value * 0.5 + 'px';
+    shrubs.style.top= -value * 0.15 + 'px';
+    text.style.top= value * 1 + 'px';
+    })
+     
+
+   window.scrollTo({
+  top: 200,
+  
+});
+    
+    </script>
+
+  </body>
+</html>
